@@ -1,7 +1,7 @@
 @import "_variable";
 
 @mixin pc {
-    @media (min-width: #{$breakpoint-pc}) {
+    @media (min-width: $breakpoint-pc) {
         @content;
     }
 }

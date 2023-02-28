@@ -1,11 +1,5 @@
 @import "import/mixin";
 
-h1 {
-    color: tomato;
-}
-
 @include pc {
-    h1 {
-        color: dodgerblue;
-    }
+
 }
