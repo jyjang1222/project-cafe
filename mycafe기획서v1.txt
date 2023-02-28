@@ -1,0 +1,34 @@
+주제
+카페
+
+벤치마킹 사이트
+네이버카페
+다음카페
+
+필요한 기능
+카페가입
+카페등급
+카페 카테고리
+글쓰기
+댓글, 대댓글
+카페탈퇴
+
+스타일
+한글폰트 - 맑은고딕
+영어폰트 - Arial
+메인컬러 - #ff5656
+서브컬러 - 
+텍스트 
+	카테고리 - #474747(normal), #444(bold)
+	게시판 - 타이틀: #000 fs:17px, 설명: # 666 fs:13px
+	게시판th - #333 font-size: 12px
+	게시글제목 - #111 font-size: 13px
+	게시글제목외 - #666 font-size: 11px
+	페이저 - border-radius: 2px, border-color:#e4e4e4, color: #333, height: 26px, padding:0 8px;
+박스라인 - #dedede
+헤더라인 - #AAA
+
+버튼
+공통스타일 - border-radius: 2px, height: 34px, font-size:12px, padding:6px 14px
+메인버튼 - bgcolor:#ff5656
+서브버튼 - bgcolor:#fff, border-color:#e4e4e4
