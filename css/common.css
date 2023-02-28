@@ -24,7 +24,7 @@ html, body {
     width: 6%;
   }
   .table-style1 table {
-    width: 800px;
+    width: 840px;
   }
   .table-style1 .table-title {
     padding-bottom: 10px;
@@ -64,6 +64,19 @@ html, body {
     font-size: 12px;
     font-weight: 700;
     color: #FFF;
+  }
+  .btn-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    margin: 10px 0 10px;
+    background-color: #ff5656;
+    color: #FFF;
+  }
+  .box-style1 {
+    padding: 14px 10px;
+    border: 1px solid #dedede;
   }
 }
 @media (min-width: 768px) {
