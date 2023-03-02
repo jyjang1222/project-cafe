@@ -4,13 +4,17 @@ html, body {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
+hr {
+  border-top: 1px solid #dedede;
+}
+
+@media (min-width: 1080px) {
   .container {
     width: 1080px;
     margin: 0 auto;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .table-style1 col:nth-child(1) {
     width: 8%;
   }
@@ -65,21 +69,30 @@ html, body {
     font-weight: 700;
     color: #FFF;
   }
-  .btn-main {
+  button[class^=btn], a[class^=btn] {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .btn-main {
     height: 38px;
-    margin: 10px 0 10px;
     background-color: #ff5656;
     color: #FFF;
+    font-size: 13px;
+  }
+  .btn-sub {
+    height: 38px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    color: #ff5656;
+    font-size: 13px;
   }
   .box-style1 {
-    padding: 14px 10px;
     border: 1px solid #dedede;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   #header .cafe_head {
     padding: 30px 0 20px 20px;
     border-bottom: 2px solid #ff5656;
@@ -116,7 +129,7 @@ html, body {
     color: #444;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   #footer {
     padding: 20px 0 20px;
   }
@@ -143,12 +156,42 @@ html, body {
     color: #000;
   }
 }
-@media (min-width: 768px) {
-  .cafemenu {
+@media (min-width: 1080px) {
+  .menuinfo_wrap .cafemenu {
     width: 200px;
   }
+  .menuinfo_wrap .cafeinfo {
+    margin-bottom: 20px;
+    padding: 14px 10px 10px;
+  }
+  .menuinfo_wrap .cafeinfo h2 {
+    margin-bottom: 10px;
+    padding: 4px 0;
+    font-weight: 700;
+  }
+  .menuinfo_wrap .cafeinfo p {
+    font-size: 13px;
+  }
+  .menuinfo_wrap .cafeinfo a:first-of-type {
+    margin-bottom: 10px;
+  }
+  .menuinfo_wrap .cafeinfo hr {
+    margin: 10px 0;
+  }
+  #lnb {
+    padding: 14px 10px 8px;
+  }
+  #lnb .depth1 > li {
+    margin-bottom: 10px;
+    padding: 4px 0;
+    font-weight: 700;
+  }
+  #lnb .depth2 > li {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .main_wrap {
     display: flex;
     justify-content: space-between;

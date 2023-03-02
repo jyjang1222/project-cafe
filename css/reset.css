@@ -63,3 +63,4 @@ input[type=number] {
 }
 textarea {resize: none;}
 textarea:focus {outline: none;}
+hr {border: none;}

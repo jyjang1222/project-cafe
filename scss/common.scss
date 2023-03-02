@@ -9,6 +9,7 @@ html, body {
     font-family: Arial, 'Malgun Gothic', sans-serif;
     font-size: 14px;
 }
+hr {border-top: 1px solid $line-light-gray;}
 
 @include pc {
     .container {width: 1080px;margin: 0 auto;}
@@ -65,18 +66,27 @@ html, body {
         color: #FFF;
     }
     // button
-    .btn-main {
+    button[class^=btn], a[class^=btn] {
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .btn-main {
         height: 38px;
-        margin: 10px 0 10px;
         background-color: $main-color;
         color: #FFF;
+        font-size: 13px;
+    }
+    .btn-sub {
+        height: 38px;
+        border: 1px solid $line-light-gray;
+        background-color: #fff;
+        color: $main-color;
+        font-size: 13px;
     }
     // box
     .box-style1 {
-        padding: 14px 10px;
         border: 1px solid $line-light-gray;
     }
 }
@@ -149,12 +159,38 @@ html, body {
 
 // lnb
 @include pc {
-    .cafemenu {
-        width: 200px;
+    .menuinfo_wrap {
+        .cafemenu {width: 200px;}
+        .cafeinfo {
+            margin-bottom: 20px;
+            padding: 14px 10px 10px;
+            h2 {
+                margin-bottom: 10px;
+                padding: 4px 0;
+                font-weight: 700;
+            }
+            p {font-size: 13px;}
+            a:first-of-type {margin-bottom: 10px;}
+            hr {margin: 10px 0;}
+        }
+    }
+    #lnb {
+        padding: 14px 10px 8px;
+        .depth1 {
+            & > li {
+                margin-bottom: 10px;
+                padding: 4px 0;
+                font-weight: 700;
+            }
+        }
+        .depth2 > li {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
     }
 }
 
-// main
+// main layout
 @include pc {
     .main_wrap {
         display: flex;
