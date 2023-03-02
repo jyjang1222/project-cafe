@@ -29,6 +29,7 @@ hr {
   }
   .table-style1 table {
     width: 840px;
+    border-bottom: 1px solid #dedede;
   }
   .table-style1 .table-title {
     padding-bottom: 10px;
@@ -49,9 +50,41 @@ hr {
   .table-style1 th, .table-style1 td {
     padding: 12px 0;
   }
-  .table-style1 td.post-notice {
+  .table-style1 tr.post-notice td:first-child {
     position: relative;
     padding-left: 40px;
+  }
+  .table-style1 .post-notice .post-title {
+    font-weight: 700;
+  }
+  .table-style1 .pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .table-style1 .pager ol {
+    display: flex;
+    gap: 6px;
+    margin: 0 6px;
+  }
+  .table-style1 .pager ol li.active a {
+    border: 1px solid #dedede;
+    color: #ff5656;
+  }
+  .table-style1 .pager a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+  }
+  .table-style1 .pager a:hover {
+    text-decoration: underline;
+  }
+  .table-style1 .pager > a {
+    color: #666;
   }
   .badge-notice {
     display: inline-flex;

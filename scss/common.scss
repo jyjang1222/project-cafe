@@ -27,6 +27,7 @@ hr {border-top: 1px solid $line-light-gray;}
         col:nth-child(5) {width: 6%}
         table {
             width: 840px;
+            border-bottom: 1px solid $line-light-gray;
         }
         .table-title {
             padding-bottom: 10px;
@@ -43,9 +44,36 @@ hr {border-top: 1px solid $line-light-gray;}
         th, td {
             padding: 12px 0;
         }
-        td.post-notice {
+        tr.post-notice td:first-child {
             position: relative;
             padding-left: 40px;
+        }
+        .post-notice .post-title {font-weight: 700;}
+
+        .pager {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+            ol {
+                display: flex;
+                gap: 6px;
+                margin: 0 6px;
+                li.active a {
+                    border: 1px solid $line-light-gray;
+                    color: $main-color;
+                }
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                width: 26px;
+                height: 26px;
+                &:hover {text-decoration: underline;}
+            }
+            & > a {color: #666;} // prev next
         }
     }
     // badge
