@@ -47,6 +47,9 @@ hr {
     padding-left: 10px;
     text-align: left;
   }
+  .table-style1 td:nth-of-type(2) a:hover {
+    text-decoration: underline;
+  }
   .table-style1 th, .table-style1 td {
     padding: 12px 0;
   }
@@ -121,6 +124,9 @@ hr {
     color: #ff5656;
     font-size: 13px;
   }
+  .btn-sub:hover {
+    border: 1px solid #cdcdcd;
+  }
   .box-style1 {
     border: 1px solid #dedede;
   }
@@ -190,7 +196,7 @@ hr {
   }
 }
 @media (min-width: 1080px) {
-  .menuinfo_wrap li a:hover {
+  .menuinfo_wrap .cafeinfo a:hover, .menuinfo_wrap .cafemyinfo a:hover {
     text-decoration: underline;
   }
   .menuinfo_wrap .cafeinfo_wrap {
@@ -222,6 +228,15 @@ hr {
   }
   .menuinfo_wrap .cafeinfo li:not(.cafename) a, .menuinfo_wrap .cafeinfo li:not(.cafename) span {
     margin-right: 16px;
+  }
+  .menuinfo_wrap .cafemyinfo {
+    position: relative;
+  }
+  .menuinfo_wrap .cafemyinfo .btn-logout {
+    position: absolute;
+    top: 6px;
+    right: 60px;
+    font-size: 12px;
   }
   .menuinfo_wrap .cafemyinfo li:nth-child(1) a:first-child {
     margin-right: 27px;

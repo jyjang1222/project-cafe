@@ -40,6 +40,9 @@ hr {border-top: 1px solid $line-light-gray;}
         td:nth-of-type(2) {
             padding-left: 10px;
             text-align: left;
+            & a:hover {
+                text-decoration: underline;
+            }
         }
         th, td {
             padding: 12px 0;
@@ -112,6 +115,7 @@ hr {border-top: 1px solid $line-light-gray;}
         background-color: #fff;
         color: $main-color;
         font-size: 13px;
+        &:hover {border: 1px solid #cdcdcd;}
     }
     // box
     .box-style1 {
@@ -188,7 +192,7 @@ hr {border-top: 1px solid $line-light-gray;}
 // lnb
 @include pc {
     .menuinfo_wrap {
-        li a:hover {text-decoration: underline;}
+        .cafeinfo a:hover, .cafemyinfo a:hover {text-decoration: underline;}
         .cafeinfo_wrap {
             margin-bottom: 20px;
             padding: 14px 10px 10px;
@@ -214,6 +218,13 @@ hr {border-top: 1px solid $line-light-gray;}
             li:not(.cafename) a, li:not(.cafename) span {margin-right: 16px;}
         }
         .cafemyinfo {
+            position: relative;
+            .btn-logout {
+                position: absolute;
+                top: 6px;
+                right: 60px;
+                font-size: 12px;
+            }
             li:nth-child(1) a:first-child {margin-right: 27px;}
             li:nth-child(2) a:first-child {margin-right: 27px;}
             li:nth-child(3) a:first-child {margin-right: 14px;}
