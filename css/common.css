@@ -157,26 +157,53 @@ hr {
   }
 }
 @media (min-width: 1080px) {
-  .menuinfo_wrap .cafemenu {
-    width: 200px;
+  .menuinfo_wrap li a:hover {
+    text-decoration: underline;
   }
-  .menuinfo_wrap .cafeinfo {
+  .menuinfo_wrap .cafeinfo_wrap {
     margin-bottom: 20px;
     padding: 14px 10px 10px;
   }
-  .menuinfo_wrap .cafeinfo h2 {
+  .menuinfo_wrap .cafeinfo_wrap li {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .menuinfo_wrap .cafeinfo_wrap h2 {
     margin-bottom: 10px;
     padding: 4px 0;
     font-weight: 700;
   }
-  .menuinfo_wrap .cafeinfo p {
-    font-size: 13px;
-  }
-  .menuinfo_wrap .cafeinfo a:first-of-type {
+  .menuinfo_wrap .cafeinfo_wrap a.btn-main {
     margin-bottom: 10px;
   }
-  .menuinfo_wrap .cafeinfo hr {
+  .menuinfo_wrap .cafeinfo_wrap hr {
     margin: 10px 0;
+  }
+  .menuinfo_wrap .cafeinfo .cafename {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+  .menuinfo_wrap .cafeinfo .manager {
+    color: #ff5656;
+  }
+  .menuinfo_wrap .cafeinfo li:not(.cafename) a, .menuinfo_wrap .cafeinfo li:not(.cafename) span {
+    margin-right: 16px;
+  }
+  .menuinfo_wrap .cafemyinfo li:nth-child(1) a:first-child {
+    margin-right: 27px;
+  }
+  .menuinfo_wrap .cafemyinfo li:nth-child(2) a:first-child {
+    margin-right: 27px;
+  }
+  .menuinfo_wrap .cafemyinfo li:nth-child(3) a:first-child {
+    margin-right: 14px;
+  }
+  .menuinfo_wrap .cafemenu {
+    width: 200px;
+  }
+  .menuinfo_wrap .count {
+    color: #ff5656;
   }
   #lnb {
     padding: 14px 10px 8px;

@@ -160,19 +160,38 @@ hr {border-top: 1px solid $line-light-gray;}
 // lnb
 @include pc {
     .menuinfo_wrap {
-        .cafemenu {width: 200px;}
-        .cafeinfo {
+        li a:hover {text-decoration: underline;}
+        .cafeinfo_wrap {
             margin-bottom: 20px;
             padding: 14px 10px 10px;
+            li {
+                margin-bottom: 10px;
+                font-size: 13px;
+            }
             h2 {
                 margin-bottom: 10px;
                 padding: 4px 0;
                 font-weight: 700;
             }
-            p {font-size: 13px;}
-            a:first-of-type {margin-bottom: 10px;}
+            a.btn-main {margin-bottom: 10px;}
             hr {margin: 10px 0;}
         }
+        .cafeinfo {
+            .cafename {
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: -0.05em;
+            }
+            .manager {color: $main-color;}
+            li:not(.cafename) a, li:not(.cafename) span {margin-right: 16px;}
+        }
+        .cafemyinfo {
+            li:nth-child(1) a:first-child {margin-right: 27px;}
+            li:nth-child(2) a:first-child {margin-right: 27px;}
+            li:nth-child(3) a:first-child {margin-right: 14px;}
+        }
+        .cafemenu {width: 200px;}
+        .count {color: $main-color;}
     }
     #lnb {
         padding: 14px 10px 8px;
