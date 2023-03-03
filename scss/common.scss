@@ -10,7 +10,7 @@ html, body {
     font-size: 14px;
 }
 hr {border-top: 1px solid $line-light-gray;}
-@include mobile {
+@include tablet {
     .container {margin: 0 15px;}
 }
 @include pc {
@@ -18,12 +18,87 @@ hr {border-top: 1px solid $line-light-gray;}
 }
 
 // style-component
+.table-style1 {
+    .table-title {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    tr {text-align: center;}
+    th, td {
+        padding: 20px 0;
+    }
+    td {
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    // td a {
+    // }
+    td:nth-of-type(2) {
+        padding-left: 10px;
+        text-align: left;
+    }
+    tr.post-notice td:first-child {
+        position: relative;
+        // padding-left: 40px;
+    }
+    .post-notice .post-title {font-weight: 700;}
+}
+.badge-notice {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: $main-color;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+@include tablet {
+    .table-style1 {
+        col:nth-child(1) {width: 34px;}
+        col:nth-child(3) {width: 80px}
+        col:nth-child(4) {width: 90px}
+        col:nth-child(5) {width: 30px}
+        table {width: 100%;}
+        .table-title {
+            display: none;
+            // padding-bottom: 10px;
+            border-bottom: 1px solid #bbb;
+        }
+        tr:first-child {display: none;}
+        th, td {
+            font-size: 16px;
+        }
+        td {border-bottom: 1px solid #f5f5f5;}
+        td:nth-of-type(1) {font-size: 14px;}
+        td:nth-of-type(3) {font-size: 14px;text-align: right;}
+        td:nth-of-type(4) {font-size: 14px;text-align: right;}
+        td:nth-of-type(5) {font-size: 14px;text-align: right;}
+    }
+}
+@include mobile {
+    .table-style1 {
+        col:nth-child(3) {width: 60px}
+        col:nth-child(4) {display: none;}
+        col:nth-child(5) {display: none;}
+        td:nth-of-type(2) {font-size: 14px;}
+        td:nth-of-type(4) {display: none;}
+        td:nth-of-type(5) {display: none;}
+    }
+}
 @include pc {
     // table
     .table-style1 {
-        col:nth-child(1) {
-            width: 8%;
-        }
+        col:nth-child(1) {width: 8%;}
         col:nth-child(3) {width: 10%}
         col:nth-child(4) {width: 14%}
         col:nth-child(5) {width: 6%}
@@ -31,17 +106,16 @@ hr {border-top: 1px solid $line-light-gray;}
             width: 840px;
         }
         .table-title {
-            padding-bottom: 10px;
+            // padding-bottom: 10px;
             border-bottom: 1px solid #bbb;
-            font-size: 16px;
             font-weight: 700;
         }
-        tr {text-align: center;}
+        // tr {text-align: center;}
         tr:nth-of-type(n+2):hover {background-color: #f5f5f5;}
         tr:first-of-type {border-bottom: 1px solid $line-light-gray;}
         td:nth-of-type(2) {
-            padding-left: 10px;
-            text-align: left;
+            // padding-left: 10px;
+            // text-align: left;
             & a:hover {
                 text-decoration: underline;
             }
@@ -49,13 +123,13 @@ hr {border-top: 1px solid $line-light-gray;}
         th, td {
             padding: 12px 0;
         }
-        td {border-bottom: 1px solid #f5f5f5;}
+        // td {border-bottom: 1px solid #f5f5f5;}
         tr:last-child td {border-bottom: 1px solid #dedede;}
-        tr.post-notice td:first-child {
-            position: relative;
-            padding-left: 40px;
-        }
-        .post-notice .post-title {font-weight: 700;}
+        // tr.post-notice td:first-child {
+        //     position: relative;
+        //     padding-left: 40px;
+        // }
+        // .post-notice .post-title {font-weight: 700;}
 
         .pager {
             display: flex;
@@ -84,22 +158,22 @@ hr {border-top: 1px solid $line-light-gray;}
         }
     }
     // badge
-    .badge-notice {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 34px;
-        height: 20px;
-        border-radius: 2px;
-        background-color: $main-color;
-        font-size: 12px;
-        font-weight: 700;
-        color: #FFF;
-    }
+    // .badge-notice {
+    //     display: inline-flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     width: 34px;
+    //     height: 20px;
+    //     border-radius: 2px;
+    //     background-color: $main-color;
+    //     font-size: 12px;
+    //     font-weight: 700;
+    //     color: #FFF;
+    // }
     // button
     button[class^=btn], a[class^=btn] {
         box-sizing: border-box;
@@ -127,14 +201,14 @@ hr {border-top: 1px solid $line-light-gray;}
     }
 }
 
-// header
+// header & gnb
 #header {
     .logo-main {
         font-family: 'M PLUS Rounded 1c';
         font-weight: 800;
     }
 }
-@include mobile {
+@include tablet {
     #header {
         background-color: $main-color;
         .cafe_head {
@@ -168,7 +242,33 @@ hr {border-top: 1px solid $line-light-gray;}
             background-position: center right;
         }
     }
-    #gnb {border-bottom: 1px solid #000;}
+    #gnb {
+        border-bottom: 1px solid $line-light-gray;
+        font-size: 16px;
+        ul {
+            display: flex;
+            gap: 30px;
+            a {
+                display: flex;
+                align-items: center;
+                margin-bottom: -1px;
+                height: 47px;
+            }
+            li.active {
+                color: $main-color;
+                a {border-bottom: 2px solid $main-color;}
+                font-weight: 700;
+            }
+        }
+    }
+}
+@include mobile {
+    #header {
+        h1, .logo-main {
+            font-size: 18px;
+        }
+    }
+
 }
 @include pc {
     #header {
@@ -235,6 +335,9 @@ hr {border-top: 1px solid $line-light-gray;}
 }
 
 // lnb
+@include tablet {
+    .menuinfo_wrap {display: none;}
+}
 @include pc {
     .menuinfo_wrap {
         .cafeinfo a:hover, .cafemyinfo a:hover {text-decoration: underline;}
@@ -314,6 +417,11 @@ hr {border-top: 1px solid $line-light-gray;}
 }
 
 // main layout
+// @include tablet {
+//     .main_content {
+//         padding-top: 20px;
+//     }
+// }
 @include pc {
     .main_wrap {
         display: flex;
