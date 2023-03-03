@@ -8,6 +8,11 @@ hr {
   border-top: 1px solid #dedede;
 }
 
+@media (max-width: 1079px) {
+  .container {
+    margin: 0 15px;
+  }
+}
 @media (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -139,14 +144,60 @@ hr {
     border: 1px solid #dedede;
   }
 }
+#header .logo-main {
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 800;
+}
+
+@media (max-width: 1079px) {
+  #header {
+    background-color: #ff5656;
+  }
+  #header .cafe_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+  }
+  #header .logo-main {
+    font-family: "M PLUS Rounded 1c";
+    font-weight: 800;
+    font-size: 22px;
+  }
+  #header h1 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2px;
+    margin: 0;
+    height: 60px;
+    font-size: 23px;
+  }
+  #header .cafedesc {
+    display: none;
+  }
+  #header .btn-menu {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url("../image/gnb-menu3.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center right;
+  }
+  #gnb {
+    border-bottom: 1px solid #000;
+  }
+}
 @media (min-width: 1080px) {
+  #header .btn-menu {
+    display: none;
+  }
   #header .cafe_head {
     padding: 30px 0 20px 20px;
     border-bottom: 2px solid #ff5656;
   }
   #header .logo-main {
-    font-family: "M PLUS Rounded 1c";
-    font-weight: 800;
     font-size: 30px;
     letter-spacing: -0.04em;
     color: #ff5656;
@@ -160,10 +211,8 @@ hr {
   #header .cafedesc {
     color: #666;
   }
-  #gnb {
-    border-bottom: 1px solid #dedede;
-  }
   #gnb ul {
+    border-bottom: 1px solid #dedede;
     display: flex;
   }
   #gnb li {
