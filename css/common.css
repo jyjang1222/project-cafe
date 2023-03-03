@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap");
 html, body {
+  overflow-x: hidden;
   font-family: Arial, "Malgun Gothic", sans-serif;
   font-size: 14px;
 }
@@ -254,7 +255,7 @@ hr {
     display: block;
     width: 36px;
     height: 36px;
-    background-image: url("../image/gnb-menu3.svg");
+    background-image: url("../image/gnb-menu.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: center right;
@@ -284,6 +285,9 @@ hr {
 @media (max-width: 767px) {
   #header h1, #header .logo-main {
     font-size: 18px;
+  }
+  #gnb {
+    font-size: 15px;
   }
 }
 @media (min-width: 1080px) {
@@ -322,31 +326,59 @@ hr {
     color: #444;
   }
 }
+#footer {
+  border-top: 2px solid #000;
+}
+#footer .footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 60px;
+}
+#footer .cafe_info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#footer .cafe_info p:first-child {
+  font-weight: 700;
+}
+#footer .cafe_info p:nth-child(2) {
+  font-size: 12px;
+}
+#footer .logo-sub {
+  display: flex;
+  align-items: center;
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  color: #000;
+}
+
+@media (max-width: 1079px) {
+  #footer .logo-sub {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  #footer .logo-sub {
+    font-size: 20px;
+  }
+  #footer .cafe_info p:nth-of-type(2) {
+    display: none;
+  }
+}
 @media (min-width: 1080px) {
   #footer {
-    padding: 20px 0 20px;
+    border-top: none;
   }
   #footer .footer_wrap {
-    display: flex;
-    justify-content: space-between;
-  }
-  #footer .cafe_info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  #footer .cafe_info p:first-child {
-    font-weight: 700;
-  }
-  #footer .cafe_info p:nth-child(2) {
-    font-size: 12px;
+    height: 66px;
+    border-top: 2px solid #000;
   }
   #footer .logo-sub {
-    font-family: "M PLUS Rounded 1c";
-    font-weight: 800;
     font-size: 24px;
-    letter-spacing: -0.04em;
-    color: #000;
   }
 }
 @media (max-width: 1079px) {
@@ -452,7 +484,6 @@ hr {
     display: flex;
     justify-content: space-between;
     padding: 10px 0 100px;
-    border-bottom: 2px solid #000;
   }
   .main_content {
     padding-top: 34px;
