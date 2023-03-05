@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap");
-html, body {
+html {
   overflow-x: hidden;
   font-family: Arial, "Malgun Gothic", sans-serif;
 }
 
 @media (min-width: 1080px) {
-  body {
+  html {
     font-size: 14px;
   }
 }
 @media (max-width: 1079px) {
-  body {
+  html {
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  body {
+  html {
     font-size: 14px;
   }
 }
@@ -164,6 +164,10 @@ hr {
     font-size: 14px;
     text-align: right;
   }
+  .table-style1 .pager a {
+    width: 28px;
+    height: 28px;
+  }
 }
 @media (max-width: 767px) {
   .table-style1 col:nth-child(3) {
@@ -180,6 +184,10 @@ hr {
   }
   .table-style1 td:nth-of-type(5) {
     display: none;
+  }
+  .table-style1 .pager a {
+    width: 26px;
+    height: 26px;
   }
 }
 @media (min-width: 1080px) {

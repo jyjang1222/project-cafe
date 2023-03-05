@@ -5,22 +5,22 @@
 @import "import/mixin";
 
 // common
-html, body {
+html {
     overflow-x: hidden;
-    font-family: Arial, 'Malgun Gothic', sans-serif;    
+    font-family: Arial, 'Malgun Gothic', sans-serif;
 }
 @include pc {
-    body {
+    html {
         font-size: 14px;
     }
 }
 @include tablet {
-    body {
+    html {
         font-size: 16px;
     }
 }
 @include mobile {
-    body {
+    html {
         font-size: 14px;
     }
 }
@@ -134,6 +134,10 @@ hr {border-top: 1px solid $line-light-gray;}
         td:nth-of-type(3) {font-size: 14px;text-align: right;}
         td:nth-of-type(4) {font-size: 14px;text-align: right;}
         td:nth-of-type(5) {font-size: 14px;text-align: right;}
+        .pager a {
+            width: 28px;
+            height: 28px;
+        }
     }
 }
 @include mobile {
@@ -143,6 +147,10 @@ hr {border-top: 1px solid $line-light-gray;}
         col:nth-child(5) {display: none;}
         td:nth-of-type(4) {display: none;}
         td:nth-of-type(5) {display: none;}
+        .pager a {
+            width: 26px;
+            height: 26px;
+        }
     }
 }
 @include pc {
