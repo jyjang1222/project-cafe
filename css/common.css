@@ -297,11 +297,11 @@ hr {
   }
   #lnb .menu_group {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: 700;
   }
   #lnb .depth2 > li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 13px;
   }
   #lnb .depth2 a:hover {
@@ -325,8 +325,9 @@ hr {
     right: 300px;
     width: 40px;
     height: 40px;
-    background-image: url("../image/ico_cafe.png");
-    background-position: -120px -1490px;
+    background-image: url("../image/btn-close-white.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
   }
   .menuinfo_wrap {
     position: absolute;
@@ -347,8 +348,29 @@ hr {
     background-size: 22px 22px;
     background-position: center;
   }
+  #lnb {
+    padding: 0;
+  }
+  #lnb a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+  #lnb .menu_group {
+    font-weight: 700;
+    border-bottom: 1px solid #dedede;
+  }
 }
 @media (max-width: 767px) {
+  .modal_wrap .btn-close {
+    width: 36px;
+    height: 36px;
+    background-size: 70%;
+    right: 240px;
+  }
+  .menuinfo_wrap {
+    width: 240px;
+  }
   .menuinfo_wrap .search_area .btn-search {
     background-size: 20px 20px !important;
   }
