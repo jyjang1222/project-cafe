@@ -32,12 +32,52 @@
   .board_detail_wrap .board_content {
     min-height: 60px;
   }
-  .board_detail_wrap .comment_area {
+  .board_detail_wrap h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .board_detail_wrap .comment {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .board_detail_wrap .comment.depth2 {
+    padding-left: 34px;
+  }
+  .board_detail_wrap .comment .thumb {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url("../image/profile-default.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .board_detail_wrap .comment p {
+    line-height: 1.5;
+  }
+  .board_detail_wrap .comment p b {
+    margin-right: 4px;
+  }
+  .board_detail_wrap .comment_author_desc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .board_detail_wrap .comment_author_desc li:nth-child(2) {
+    font-size: 12px;
+    color: #666;
+  }
+  .board_detail_wrap .comment_form {
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #dedede;
   }
-  .board_detail_wrap .comment_area button {
+  .board_detail_wrap .comment_form p {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .board_detail_wrap .comment_form button {
     width: 54px;
     height: 34px;
   }

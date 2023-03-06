@@ -31,11 +31,44 @@
         .board_content {
             min-height: 60px;
         }
-        .comment_area {
+        h4 {font-size: 16px;font-weight: 700;}
+        .comment {
+            display: flex;
+            gap: 10px;
+            padding: 10px 0;
+            &.depth2 {
+                padding-left: 34px;
+            }
+            .thumb {
+                display: block;
+                width: 28px;
+                height: 28px;
+                // padding-top: 4px;
+                background-image: url('../image/profile-default.png');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+            p {
+                line-height: 1.5;
+                b {margin-right: 4px;}
+            }
+        }
+        .comment_author_desc {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            li:nth-child(2) {
+                font-size: 12px;
+                color: #666;
+            }
+        }
+        .comment_form {
             box-sizing: border-box;
+            p {display: flex;justify-content: flex-end;}
+            button {width: 54px;height: 34px;}
             padding: 10px;
             border: 1px solid $line-light-gray;
-            button {width: 54px;height: 34px;}
         }
     }
 }
