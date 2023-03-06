@@ -144,6 +144,9 @@ hr {border-top: 1px solid $line-light-gray;}
 }
 @include mobile {
     #header {
+        h1 {
+            height: 48px;
+        }
         h1, .logo-main {
             font-size: 18px;
         }
@@ -200,6 +203,9 @@ hr {border-top: 1px solid $line-light-gray;}
 }
 @include mobile {
     #footer {
+        .footer_wrap {
+            height: 48px;
+        }
         .logo-sub {
             font-size: 20px;
         }
@@ -236,6 +242,35 @@ hr {border-top: 1px solid $line-light-gray;}
             background-position: center;
         }
     }
+    .cafemyinfo {
+        position: relative;
+        .btn-logout {
+            position: absolute;
+            top: 6px;
+            right: 40px;
+            font-size: 12px;
+        }
+        .profile {
+            display: flex;
+            margin-bottom: 14px;
+        }
+        .thumb {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background-image: url('../image/profile-default.png');
+            background-size: cover;
+        }
+        .profile_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+            p:nth-child(1) {font-weight: 700;}
+            p:nth-child(2) {font-size: 12px;color: #666;}
+        }
+    }
 }
 @include pc {
     .modal_wrap {
@@ -256,7 +291,6 @@ hr {border-top: 1px solid $line-light-gray;}
                 padding: 4px 0;
                 font-weight: 700;
             }
-            // a.btn-main {margin-bottom: 10px;}
             hr {margin: 10px 0;}
         }
         .cafeinfo {
@@ -269,13 +303,6 @@ hr {border-top: 1px solid $line-light-gray;}
             li:not(.cafename) a, li:not(.cafename) span {margin-right: 16px;}
         }
         .cafemyinfo {
-            position: relative;
-            .btn-logout {
-                position: absolute;
-                top: 6px;
-                right: 60px;
-                font-size: 12px;
-            }
             li:nth-child(1) a:first-child {margin-right: 27px;}
             li:nth-child(2) a:first-child {margin-right: 27px;}
             li:nth-child(3) a:first-child {margin-right: 14px;}
@@ -319,6 +346,7 @@ hr {border-top: 1px solid $line-light-gray;}
             background-image: url('../image/btn-close-white.svg');
             background-repeat: no-repeat;
             background-position: left bottom;
+            background-size: 70%;
         }
     }
     .menuinfo_wrap {
@@ -330,6 +358,23 @@ hr {border-top: 1px solid $line-light-gray;}
         width: 300px;
         padding: 10px;
         background-color: #fff;
+        .cafeinfo {
+            display: none;
+        }
+        .cafemyinfo {
+            .btn-logout {
+                top: 0;
+                right: 0;
+                font-size: 14px;
+            }
+            h2 {
+                margin-bottom: 14px;
+                font-weight: 700;
+            }
+            & > ul {
+                display: none;
+            }
+        }
         .search_area {
             height: 30px;
             .btn-search {
@@ -364,6 +409,11 @@ hr {border-top: 1px solid $line-light-gray;}
     }
     .menuinfo_wrap {
         width: 240px;
+        .cafemyinfo {
+            .btn-logout {
+                font-size: 13px;
+            }
+        }
         .search_area {
             .btn-search {
                 background-size: 20px 20px !important;
