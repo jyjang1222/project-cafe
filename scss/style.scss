@@ -32,26 +32,38 @@
             min-height: 60px;
         }
         h4 {font-size: 16px;font-weight: 700;}
+        .comment_list {
+            padding: 4px 0 10px;
+        }
         .comment {
-            display: flex;
-            gap: 10px;
+            position: relative;
             padding: 10px 0;
             &.depth2 {
                 padding-left: 34px;
+                p {width: 724px;}
             }
             .thumb {
                 display: block;
                 width: 28px;
                 height: 28px;
-                // padding-top: 4px;
                 background-image: url('../image/profile-default.png');
                 background-size: 100% auto;
                 background-repeat: no-repeat;
             }
             p {
+                width: 758px;
                 line-height: 1.5;
                 b {margin-right: 4px;}
             }
+        }
+        .comment_post {
+            display: flex;
+            gap: 10px;
+        }
+        .comment_response {
+            position: absolute;
+            top: 10px;
+            right: 0;
         }
         .comment_author_desc {
             display: flex;
