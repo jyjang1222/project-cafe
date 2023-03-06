@@ -1,0 +1,9 @@
+@media (min-width: 1080px) {
+  .board_detail_wrap {
+    border: 1px solid #dedede;
+  }
+  .board_detail {
+    width: 856px;
+    height: 40px;
+  }
+}

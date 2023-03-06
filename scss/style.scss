@@ -1,0 +1,13 @@
+@import "import/variable";
+@import "import/mixin";
+
+// board detail
+@include pc {
+    .board_detail_wrap {
+        border: 1px solid $line-light-gray;
+    }
+    .board_detail {
+        width: 856px;
+        height: 40px;
+    }
+}

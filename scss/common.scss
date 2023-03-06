@@ -18,11 +18,13 @@ html {
     html {
         font-size: 16px;
     }
+    hr {margin: 14px 0;}
 }
 @include mobile {
     html {
         font-size: 14px;
     }
+    hr {margin: 12px 0;}
 }
 hr {border-top: 1px solid $line-light-gray;}
 
@@ -37,7 +39,7 @@ hr {border-top: 1px solid $line-light-gray;}
         justify-content: space-between;
         padding: 10px 0 100px;
     }
-    .main_content {
+    #main .main_content {
         padding-top: 34px;
     }
     .container {width: 1080px;margin: 0 auto;}
@@ -328,7 +330,10 @@ hr {border-top: 1px solid $line-light-gray;}
 }
 @include tablet {
     .modal_wrap {
-        // display: none;
+        display: none;
+        &.active {
+            display: block;
+        }
         position: fixed;
         top: 0;
         right: 0;
@@ -352,11 +357,11 @@ hr {border-top: 1px solid $line-light-gray;}
     .menuinfo_wrap {
         position: absolute;
         top: 0;
-        right: 0;
+        right: -300px;
         bottom: 0;
         box-sizing: border-box;
         width: 300px;
-        padding: 10px;
+        padding: 15px;
         background-color: #fff;
         .cafeinfo {
             display: none;
@@ -409,6 +414,7 @@ hr {border-top: 1px solid $line-light-gray;}
     }
     .menuinfo_wrap {
         width: 240px;
+        padding: 10px;
         .cafemyinfo {
             .btn-logout {
                 font-size: 13px;
