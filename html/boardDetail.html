@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main - 알고리즘마스터하기</title>
     <link rel="stylesheet" href="../css/import.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../script/main.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -33,6 +35,7 @@
         <div class="main_wrap">
           <div class="modal_wrap">
             <div class="menuinfo_wrap">
+              <a href="#a" class="btn-close"></a>
               <div class="cafeinfo_wrap box-style1">
                 <div class="cafeinfo">
                   <h2>카페정보</h2>
@@ -88,11 +91,34 @@
                 </nav>
               </div>
             </div>
-            <a href="#a" class="btn-close"></a>
           </div><!-- modal end -->
           <div class="main_content">
             <div class="board_detail_wrap">
-                <div class="board_detail"></div>
+              <div class="board_detail">
+                <div class="board_head">
+                  <p class="board_menuname">오늘의 알고리즘</p>
+                  <h3>알고리즘 문제</h3>
+                  <ul class="board_author_desc">
+                    <li><a href="#a"></a></li>
+                    <li><a href="#a">알고리즘마스터</a></li>
+                    <li>2023-03-06</li>
+                    <li>0</li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="board_body">
+                  <p class="board_content">글 내용</p>
+                </div>
+                <hr>
+                <div class="board_foot">
+                  <div class="comment_area">
+                    <form action="">
+                      <textarea class="textarea-style1"></textarea>
+                      <div class="flx jce"><button type="submit" class="btn-main">등록</button></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

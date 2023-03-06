@@ -15,6 +15,7 @@ button[class^=btn], a[class^=btn] {
     font-size: 13px;
 }
 .btn-main {
+    border: none;
     background-color: $main-color;
     color: #FFF;
 }
@@ -53,6 +54,21 @@ button[class^=btn], a[class^=btn] {
     font-size: 12px;
     font-weight: 700;
     color: #FFF;
+}
+
+// textarea
+.textarea-style1 {
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+}
+
+// box
+@include pc {
+    .box-style1 {
+        border: 1px solid $line-light-gray;
+    }
 }
 
 // table
@@ -104,7 +120,6 @@ button[class^=btn], a[class^=btn] {
     }
 }
 @include pc {
-    // table
     .table-style1 {
         col:nth-child(1) {width: 8%;}
         col:nth-child(3) {width: 10%}
@@ -128,11 +143,6 @@ button[class^=btn], a[class^=btn] {
             padding: 12px 0;
         }
         tr:last-child td {border-bottom: 1px solid #dedede;}
-    }
-
-    // box
-    .box-style1 {
-        border: 1px solid $line-light-gray;
     }
 }
 @include tablet {

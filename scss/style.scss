@@ -5,9 +5,37 @@
 @include pc {
     .board_detail_wrap {
         border: 1px solid $line-light-gray;
-    }
-    .board_detail {
-        width: 856px;
-        height: 40px;
+        hr {margin: 20px 0;}
+        .board_detail {
+            box-sizing: border-box;
+            width: 856px;
+            padding: 24px 30px;
+            h3 {
+                margin: 14px 0;
+                font-size: 22px;
+            }
+        }
+        .board_author_desc {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            li:first-child a {
+                display: block;
+                width: 28px;
+                height: 28px;
+                background-image: url('../image/profile-default.png');
+                background-size: cover;
+            }
+            li:nth-child(2) {font-weight: 700;}
+        }
+        .board_content {
+            min-height: 60px;
+        }
+        .comment_area {
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid $line-light-gray;
+            button {width: 54px;height: 34px;}
+        }
     }
 }
